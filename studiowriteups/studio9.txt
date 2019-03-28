@@ -1,0 +1,62 @@
+Your TA's name:
+
+Students in your studio group:
+
+    Name        WUSTLKey (e.g. "jbuhler")
+	
+1.  Anh vo		ahvo
+2.Grant Marcketta gmarcketta
+3.
+4.
+5.
+6.
+
+Below each question, type in your short, to-the-point answers.
+
+Question A1:
+The low-order is the last char.
+Question A2:
+4 chars.
+Question A3:
+Sum ( h  + charAT[s[i]]).
+Question B1:
+a = bn + u
+x = bm + v. 
+Multiply a * x mod b = uv.
+Question B2:
+
+Question B3:
+
+Question B4:
+221C3   - > Composition formula.
+Question B5:
+Insert all possible combination of four characters then search for all of them one at a time.
+Question B6:
+
+Question B7:
+
+Question B8:
+Just make words with the same elements at the end.
+Question C1:
+Use a prime number so that hashing is more affective.
+Question C2:
+They all should end with the same character.
+Question C3:
+Let z = 60, then (60   2n-1). 
+Question C4:
+Z=60, 6 characters size.
+Question C5:
+Same way as before but now it is more difficult because of the prime number of 31 makes it harder.
+Question D1:
+
+Question D2:
+
+Question D3:
+
+Question D4:
+
+Question D5:
+
+Question D6:
+
+Question D7:

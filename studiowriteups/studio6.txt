@@ -1,0 +1,61 @@
+Your TA's name:
+
+Students in your studio group:
+
+    Name        WUSTLKey (e.g. "jbuhler")
+	
+1.Anh Vo			ahvo
+2. Grant Marcketta gmarcketta
+3.
+4.
+5.
+6.
+
+Below each question, type in your short, to-the-point answers.
+
+Question A1:
+
+i = 0;   j = 0;
+while  ( k <= m+n+1 ) do {
+	if a[i] <= b[j] then {
+		c[k] = a[i]
+		k++;
+		i++; 
+		}
+		else {
+		c[k] = b[j]
+		k++;
+		j++; }
+		
+}
+Question A2:
+He is convinced.
+Question A3:
+
+Question A4:
+Every time K++, I pick the next minimum out of array A and B so the invariant holds.
+Question A5:
+it is done
+Question B1:
+Theta(n)
+Question B2:
+T(n) = 2T(n/2) + n
+
+Question B3:
+Theta(n logn)
+Question B4:
+T(n) = kT(n/k) + n
+Question B5:
+theta(n log n)
+Question C1:
+The total scpace is 2n. 
+T(n) = 2T(n/2) + n
+O(2n)
+Question C2:
+We do not need array C, and use A + B as C. Every next minimum will be filled into A untill it is full and then move to B.
+Question C3:
+
+Question C4:
+Swap until the heap properties hold.
+Question C5:
+Swap the root to the leaf ( last index of the array ) and let the heap properties run while doing it. 

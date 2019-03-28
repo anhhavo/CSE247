@@ -1,0 +1,46 @@
+Your TA's name:
+
+Students in your studio group:
+
+    Name        WUSTLKey (e.g. "jbuhler")
+	
+1.Grant Marcketta gmarcketta
+2. Ahn Vo           ahvo
+3.
+4.
+5.
+6.
+
+Below each question, type in your short, to-the-point answers.
+
+Question A1:
+4 - 2 - 3 - 3 - 2
+Question A2:
+Same thing
+Question A3:
+Total weight is 14 and the edges are the same... A to B to C to F to D to E
+Question B1:
+
+Question B2:
+Since T* has no cylce yet is complete, adding one more edge would complete and create the first cycle.
+You can't create two cycles with one edge if no other cycles are present.
+Question B3:
+
+Question B4:
+
+Question C1:
+
+Question C2:
+
+Question C3:
+
+Question C4:
+
+Question D1:
+
+Question D2:
+
+Question D3:
+You might only be able to take one big object rather than two smaller objects that equate to more total,
+even tho the density of the smaller objects is less than that of the bigger object. 
+Question D4:

@@ -1,0 +1,41 @@
+Your TA's name:
+
+Students in your studio group:
+
+    Name        WUSTLKey (e.g. "jbuhler")
+	
+1. Anh Vo		ahvo
+2. Grant Marcketta gmarcketta
+3.
+4.
+5.
+6.
+
+Below each question, type in your short, to-the-point answers.
+
+Question A1:
+Int, Double, String
+Question A2:
+a) -1  b) 1 c)-1  d) 0
+Question A3:
+We chose Enum as the object. One said to be less than another when the order of the specified object is less than the another.
+Question B1:
+1 Constant
+2 Constant
+3 Linear
+Question B2:
+1 Constant
+2 Constant
+3 Linear
+Question B3:
+
+Question C1:
+1 Constant
+2 Constant
+3 Linear
+Question C2:
+1 Constant
+2 Constant
+3 Linear
+Question C3:
+When you do not care about finding the largest or smallest data type of the objects.

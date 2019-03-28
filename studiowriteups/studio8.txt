@@ -1,0 +1,51 @@
+Your TA's name:
+
+Students in your studio group:
+
+    Name        WUSTLKey (e.g. "jbuhler")
+	
+1.Anh vo		ahvo
+2.Grant Marcketta gmarcketta
+3.
+4.
+5.
+6.
+
+Below each question, type in your short, to-the-point answers.
+
+Question A1:
+The elements are printed in incorrect order.
+Question A2:
+X and Y have the same value		
+Question A3:
+Add 7X to Y
+Question A4:
+Not, we can have overlap i.e (3,1) (4,-6).  = 22
+Question A5:
+We can just use X but it will have many collusion	
+Question B1:
+32 bits
+Question B2:
+Yes, no  distinct colors map the same hashcode
+Question B3: 
+The variant of bar sizes can be very large, the smallest - 50 , the largest - 325
+Question B4:
+There is no derivation since there are 32 bins in either case
+Question C1:
+2 Bins are much more full than others, since there are 2 every common colors
+Question C2:
+No these values are consistent with C1, 
+Question C3:
+A smaller m would make the table have more variants
+Question D1:
+The least significant
+Question D2:
+yes
+Question D3:
+No they look less uniform. 
+Question D4:
+The hash codes will look very different.
+Question D5:
+Yes because they are made more similar numerically by a constant factor. 
+Question D6:
+:)

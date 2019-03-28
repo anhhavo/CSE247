@@ -1,0 +1,53 @@
+Your TA's name:
+
+Students in your studio group:
+
+    Name        WUSTLKey (e.g. "jbuhler")
+	
+1.Grant Marcketta gmarcketta
+2. Ahn Vo           ahvo
+3.
+4.
+5.
+6.
+
+Below each question, type in your short, to-the-point answers.
+
+Question A1:
+E - 0, F - 1, G - 1, B - 2, D - 2, C - 3, A - 3			
+Question A2:
+6
+Question A3:
+Vertex A has a time of 8 in dealing with DFS 
+Question B1:
+Yes you can have an topological order 
+Question B2:
+iff the vertices are topoligcal in length,
+Question B3:
+the finished time of u is greater than v
+Question B4:
+the finished time of u is greater than v
+Question B5:
+yes
+Question B6:
+A C B D E F
+Question C1:
+ A B E C D F ; A C B E D F; A B C D E F
+Question C2:
+V1
+Question C3:
+Largest time fo complete
+Question C4:
+
+Question C5:
+
+Question C6:
+
+Question C7:
+
+Question D1:
+the finish time of v_i+1 would be lest than v_i which is impossible given the topological order
+Question D2:
+there can only be one order ( 3 edges for 4 order ). 
+Question D3:
+n^2

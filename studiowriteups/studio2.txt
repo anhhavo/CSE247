@@ -1,0 +1,40 @@
+Your TA's name:
+
+Students in your studio group:
+
+    Name        WUSTLKey (e.g. "jbuhler")
+	
+1. Anh Vo		ahvo
+2. Grant Marcketta gmarcketta
+3.Nico Topulos		ntopulos
+4.
+5.
+6.
+
+Below each question, type in your short, to-the-point answers.
+
+Question A1:
+The function of n for ticks and time is a n^2 + 3n curve.
+Question A2:
+Every
+Question B1:
+The shape of running-time is now a straight line because we did remove the while loop with 2n*ticks.
+Question B2:
+INcrease by the tail
+Question B3:
+Having a tail pointer is worth when there is a very long list, and it is not worth when we have such as 1 element in the list.
+
+Question C1:
+3n + 3
+Question C2:
+We add a new variable so that everytime a new element is added, the variable increases by 1.
+Question C3:
+because calling a varialble is at theta(1) no matter how big n is.
+Question D1:
+The complexity is constant-time. 
+Question D2:
+Maintain the mid-point variable
+Question D3:
+Maintain a maximum variable as running through the list.
+Question D4:
+It does not change. a 2nd-maximum point can be maintained if we want to delete the maximum point. 

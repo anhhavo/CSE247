@@ -1,0 +1,1224 @@
+-------------------
+CSE247 Robot tester starts testing heaps on 2018-12-17 14:36:36 -0500
+
+========
+Testing in ./GradingRepos/repos/cse247-f18-students-ahvo: heaps as of 2018-09-29 09:00
+========
+Now in: /Users/puneetsachdeva/CSE247/cse247-support/GradingRepos/repos/cse247-f18-students-ahvo
+Your branch is up to date with 'origin/master'.
+HEAD is now at 2fd6e83 robograde
+No local changes to save
+
+Updating 2fd6e83..d94dfc3
+Fast-forward
+ RoboGrade/hash-test.TestStringTable.txt | 57 +++++++++------------------------
+ 1 file changed, 15 insertions(+), 42 deletions(-)
+Going back in time to: 2018-09-29 09:00
+At hash 01013e329e6056116455dbc0d8494e899240aace
+
+Buildfile: /Users/puneetsachdeva/CSE247/cse247-support/build.xml
+
+copytest:
+     [echo] would copy from /Users/puneetsachdeva/CSE247/cse247-f18-students key ahvo testfilesource test/TestMinHeap package heaps repo ./GradingRepos/repos/cse247-f18-students-ahvo
+     [copy] Copying 1 file to /Users/puneetsachdeva/CSE247/cse247-support/GradingRepos/repos/cse247-f18-students-ahvo/labs/heaps/test
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Compiling the code
+Buildfile: /Users/puneetsachdeva/CSE247/cse247-support/build.xml
+
+compile:
+     [echo] Compiling heaps/MinHeap
+    [mkdir] Created dir: /Users/puneetsachdeva/CSE247/cse247-support/GradingRepos/repos/cse247-f18-students-ahvo/bin
+    [javac] Compiling 1 source file to /Users/puneetsachdeva/CSE247/cse247-support/GradingRepos/repos/cse247-f18-students-ahvo/bin
+
+BUILD SUCCESSFUL
+Total time: 1 second
+Buildfile: /Users/puneetsachdeva/CSE247/cse247-support/build.xml
+
+compile:
+     [echo] Compiling heaps/test/TestMinHeap
+    [javac] Compiling 1 source file to /Users/puneetsachdeva/CSE247/cse247-support/GradingRepos/repos/cse247-f18-students-ahvo/bin
+
+BUILD SUCCESSFUL
+Total time: 1 second
+Running test test.TestMinHeap
+Buildfile: /Users/puneetsachdeva/CSE247/cse247-support/build.xml
+
+test:
+    [junit] Running heaps.test.TestMinHeap
+    [junit] Testsuite: heaps.test.TestMinHeap
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] 	at heaps.validate.MinHeapValidator.checkLocsCorrect(MinHeapValidator.java:135)
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:32)
+    [junit] 	at heaps.test.TestMinHeap.sortTest(TestMinHeap.java:224)
+    [junit] 	at heaps.test.TestMinHeap.testViaSorting(TestMinHeap.java:121)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] Testing unique size 0
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] done
+    [junit] Testing unique size 1
+    [junit] done
+    [junit] Testing unique size 2
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] done
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] Testing unique size 3
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] done
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+    [junit] Testing unique size 4
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+    [junit] ===== Failure report for testViaSorting(heaps.test.TestMinHeap) ========
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+    [junit] Failure message: Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]    0   
+    [junit]  1   3 
+    [junit] 2
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree that triggered this problem:
+    [junit]  1 
+    [junit] 1 3
+    [junit] 
+    [junit] ===== End Failure report for testViaSorting(heaps.test.TestMinHeap) ========
+    [junit] 
+    [junit] 
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Displaying a correct heap of 50 unique integers:
+    [junit] 	at heaps.validate.MinHeapValidator.checkLocsCorrect(MinHeapValidator.java:135)
+    [junit]                                                                0                                                               
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:32)
+    [junit]                                1                                                               7                               
+    [junit] 	at heaps.test.TestMinHeap.sortTest(TestMinHeap.java:224)
+    [junit]                9                               2                               11                              8               
+    [junit] 	at heaps.test.TestMinHeap.testAndPrint(TestMinHeap.java:175)
+    [junit]        12              10              20              3               18              19              14              13      
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit]    28      29      30      16      22      24      6       4       23      21      44      40      41      35      25      15  
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit]  48  38  42  49  39  31  17  37  46  45  34  43  32  27  33  5   47  26  36
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit] ===== Failure report for testAndPrint(heaps.test.TestMinHeap) ========
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] Failure message: Heap Validation Error (detail shown below):
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] Tree before the problem occurred:
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit]                                                                0                                                               
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit]                                1                                                               7                               
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit]                9                               2                               11                              8               
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit]        12              10              20              3               18              19              14              13      
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit]    28      29      30      16      22      24      6       4       23      21      44      40      41      35      25      15  
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit]  48  38  42  49  39  31  17  37  46  45  34  43  32  27  33  5   47  26  36
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] Tree that triggered this problem:
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit]                                                                1                                                               
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit]                                1                                                               7                               
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit]                9                               2                               11                              8               
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit]        12              10              20              3               18              19              14              13      
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+    [junit]    28      29      30      16      22      24      6       4       23      21      44      40      41      35      25      15  
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+    [junit]  48  38  42  49  39  31  17  37  46  45  34  43  32  27  33  5   47  26
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+    [junit] 
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] ===== End Failure report for testAndPrint(heaps.test.TestMinHeap) ========
+    [junit] 	at heaps.validate.MinHeapValidator.checkLocsCorrect(MinHeapValidator.java:135)
+    [junit] 
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:32)
+    [junit] 
+    [junit] 	at heaps.test.TestMinHeap.testLocUpdatedHeapify(TestMinHeap.java:166)
+    [junit] ===== Failure report for testLocUpdatedHeapify(heaps.test.TestMinHeap) ========
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] Failure message: Heap Validation Error (detail shown below):
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]        1       
+    [junit]    2       3   
+    [junit]  4   5   6  131
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree that triggered this problem:
+    [junit]    2   
+    [junit]  2   3 
+    [junit] 4 5 6
+    [junit] 
+    [junit] ===== End Failure report for testLocUpdatedHeapify(heaps.test.TestMinHeap) ========
+    [junit] 
+    [junit] 
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+    [junit] Tests run: 8, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.59 sec
+    [junit] Output:
+    [junit] Testing unique size 0
+    [junit] done
+    [junit] Testing unique size 1
+    [junit] done
+    [junit] Testing unique size 2
+    [junit] done
+    [junit] Testing unique size 3
+    [junit] done
+    [junit] Testing unique size 4
+    [junit] ===== Failure report for testViaSorting(heaps.test.TestMinHeap) ========
+    [junit] Failure message: Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]    0   
+    [junit]  1   3 
+    [junit] 2
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree that triggered this problem:
+    [junit]  1 
+    [junit] 1 3
+    [junit] 
+    [junit] ===== End Failure report for testViaSorting(heaps.test.TestMinHeap) ========
+    [junit] 
+    [junit] 
+    [junit] Displaying a correct heap of 50 unique integers:
+    [junit]                                                                0                                                               
+    [junit]                                1                                                               7                               
+    [junit]                9                               2                               11                              8               
+    [junit]        12              10              20              3               18              19              14              13      
+    [junit]    28      29      30      16      22      24      6       4       23      21      44      40      41      35      25      15  
+    [junit]  48  38  42  49  39  31  17  37  46  45  34  43  32  27  33  5   47  26  36
+    [junit] 
+    [junit] ===== Failure report for testAndPrint(heaps.test.TestMinHeap) ========
+    [junit] Failure message: Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]                                                                0                                                               
+    [junit]                                1                                                               7                               
+    [junit]                9                               2                               11                              8               
+    [junit]        12              10              20              3               18              19              14              13      
+    [junit]    28      29      30      16      22      24      6       4       23      21      44      40      41      35      25      15  
+    [junit]  48  38  42  49  39  31  17  37  46  45  34  43  32  27  33  5   47  26  36
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree that triggered this problem:
+    [junit]                                                                1                                                               
+    [junit]                                1                                                               7                               
+    [junit]                9                               2                               11                              8               
+    [junit]        12              10              20              3               18              19              14              13      
+    [junit]    28      29      30      16      22      24      6       4       23      21      44      40      41      35      25      15  
+    [junit]  48  38  42  49  39  31  17  37  46  45  34  43  32  27  33  5   47  26
+    [junit] 
+    [junit] ===== End Failure report for testAndPrint(heaps.test.TestMinHeap) ========
+    [junit] 
+    [junit] 
+    [junit] ===== Failure report for testLocUpdatedHeapify(heaps.test.TestMinHeap) ========
+    [junit] Failure message: Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]        1       
+    [junit]    2       3   
+    [junit]  4   5   6  131
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree that triggered this problem:
+    [junit]    2   
+    [junit]  2   3 
+    [junit] 4 5 6
+    [junit] 
+    [junit] ===== End Failure report for testLocUpdatedHeapify(heaps.test.TestMinHeap) ========
+    [junit] 
+    [junit] 
+    [junit] 
+    [junit] Error: 
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] 	at heaps.validate.MinHeapValidator.checkLocsCorrect(MinHeapValidator.java:135)
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:32)
+    [junit] 	at heaps.test.TestMinHeap.sortTest(TestMinHeap.java:224)
+    [junit] 	at heaps.test.TestMinHeap.testViaSorting(TestMinHeap.java:121)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] 	at heaps.validate.MinHeapValidator.checkLocsCorrect(MinHeapValidator.java:135)
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:32)
+    [junit] 	at heaps.test.TestMinHeap.sortTest(TestMinHeap.java:224)
+    [junit] 	at heaps.test.TestMinHeap.testAndPrint(TestMinHeap.java:175)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] 	at heaps.validate.MinHeapValidator.checkLocsCorrect(MinHeapValidator.java:135)
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:32)
+    [junit] 	at heaps.test.TestMinHeap.testLocUpdatedHeapify(TestMinHeap.java:166)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+    [junit] 
+    [junit] Tests run: 8, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.59 sec
+    [junit] ------------- Standard Output ---------------
+    [junit] Testing unique size 0
+    [junit] done
+    [junit] Testing unique size 1
+    [junit] done
+    [junit] Testing unique size 2
+    [junit] done
+    [junit] Testing unique size 3
+    [junit] done
+    [junit] Testing unique size 4
+    [junit] ===== Failure report for testViaSorting(heaps.test.TestMinHeap) ========
+    [junit] Failure message: Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]    0   
+    [junit]  1   3 
+    [junit] 2
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree that triggered this problem:
+    [junit]  1 
+    [junit] 1 3
+    [junit] 
+    [junit] ===== End Failure report for testViaSorting(heaps.test.TestMinHeap) ========
+    [junit] 
+    [junit] 
+    [junit] Displaying a correct heap of 50 unique integers:
+    [junit]                                                                0                                                               
+    [junit]                                1                                                               7                               
+    [junit]                9                               2                               11                              8               
+    [junit]        12              10              20              3               18              19              14              13      
+    [junit]    28      29      30      16      22      24      6       4       23      21      44      40      41      35      25      15  
+    [junit]  48  38  42  49  39  31  17  37  46  45  34  43  32  27  33  5   47  26  36
+    [junit] 
+    [junit] ===== Failure report for testAndPrint(heaps.test.TestMinHeap) ========
+    [junit] Failure message: Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]                                                                0                                                               
+    [junit]                                1                                                               7                               
+    [junit]                9                               2                               11                              8               
+    [junit]        12              10              20              3               18              19              14              13      
+    [junit]    28      29      30      16      22      24      6       4       23      21      44      40      41      35      25      15  
+    [junit]  48  38  42  49  39  31  17  37  46  45  34  43  32  27  33  5   47  26  36
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree that triggered this problem:
+    [junit]                                                                1                                                               
+    [junit]                                1                                                               7                               
+    [junit]                9                               2                               11                              8               
+    [junit]        12              10              20              3               18              19              14              13      
+    [junit]    28      29      30      16      22      24      6       4       23      21      44      40      41      35      25      15  
+    [junit]  48  38  42  49  39  31  17  37  46  45  34  43  32  27  33  5   47  26
+    [junit] 
+    [junit] ===== End Failure report for testAndPrint(heaps.test.TestMinHeap) ========
+    [junit] 
+    [junit] 
+    [junit] ===== Failure report for testLocUpdatedHeapify(heaps.test.TestMinHeap) ========
+    [junit] Failure message: Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]        1       
+    [junit]    2       3   
+    [junit]  4   5   6  131
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree that triggered this problem:
+    [junit]    2   
+    [junit]  2   3 
+    [junit] 4 5 6
+    [junit] 
+    [junit] ===== End Failure report for testLocUpdatedHeapify(heaps.test.TestMinHeap) ========
+    [junit] 
+    [junit] 
+    [junit] ------------- ---------------- ---------------
+    [junit] ------------- Standard Error -----------------
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] 	at heaps.validate.MinHeapValidator.checkLocsCorrect(MinHeapValidator.java:135)
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:32)
+    [junit] 	at heaps.test.TestMinHeap.sortTest(TestMinHeap.java:224)
+    [junit] 	at heaps.test.TestMinHeap.testViaSorting(TestMinHeap.java:121)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] 	at heaps.validate.MinHeapValidator.checkLocsCorrect(MinHeapValidator.java:135)
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:32)
+    [junit] 	at heaps.test.TestMinHeap.sortTest(TestMinHeap.java:224)
+    [junit] 	at heaps.test.TestMinHeap.testAndPrint(TestMinHeap.java:175)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] 	at heaps.validate.MinHeapValidator.checkLocsCorrect(MinHeapValidator.java:135)
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:32)
+    [junit] 	at heaps.test.TestMinHeap.testLocUpdatedHeapify(TestMinHeap.java:166)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+    [junit] ------------- ---------------- ---------------
+    [junit] 
+    [junit] Testcase: testViaSorting took 0.093 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]    0   
+    [junit]  1   3 
+    [junit] 2
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree that triggered this problem:
+    [junit]  1 
+    [junit] 1 3
+    [junit] 
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:43)
+    [junit] 	at heaps.test.TestMinHeap.sortTest(TestMinHeap.java:224)
+    [junit] 	at heaps.test.TestMinHeap.testViaSorting(TestMinHeap.java:121)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+    [junit] Testcase: testEmptyHeap took 0.01 sec
+    [junit] Testcase: testAndPrint took 0.025 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]                                                                0                                                               
+    [junit]                                1                                                               7                               
+    [junit]                9                               2                               11                              8               
+    [junit]        12              10              20              3               18              19              14              13      
+    [junit]    28      29      30      16      22      24      6       4       23      21      44      40      41      35      25      15  
+    [junit]  48  38  42  49  39  31  17  37  46  45  34  43  32  27  33  5   47  26  36
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree that triggered this problem:
+    [junit]                                                                1                                                               
+    [junit]                                1                                                               7                               
+    [junit]                9                               2                               11                              8               
+    [junit]        12              10              20              3               18              19              14              13      
+    [junit]    28      29      30      16      22      24      6       4       23      21      44      40      41      35      25      15  
+    [junit]  48  38  42  49  39  31  17  37  46  45  34  43  32  27  33  5   47  26
+    [junit] 
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:43)
+    [junit] 	at heaps.test.TestMinHeap.sortTest(TestMinHeap.java:224)
+    [junit] 	at heaps.test.TestMinHeap.testAndPrint(TestMinHeap.java:175)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+    [junit] Testcase: testExtractMin took 0.059 sec
+    [junit] Testcase: testLocUpdatedHeapify took 0.006 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]        1       
+    [junit]    2       3   
+    [junit]  4   5   6  131
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree that triggered this problem:
+    [junit]    2   
+    [junit]  2   3 
+    [junit] 4 5 6
+    [junit] 
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:43)
+    [junit] 	at heaps.test.TestMinHeap.testLocUpdatedHeapify(TestMinHeap.java:166)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+    [junit] Testcase: testInsert took 0.025 sec
+    [junit] Testcase: testUsingHeapSort took 0.342 sec
+    [junit] Testcase: testLocUpdatedDecrease took 0 sec
+
+BUILD FAILED
+/Users/puneetsachdeva/CSE247/cse247-support/build.xml:34: Test heaps.test.TestMinHeap failed
+
+Total time: 1 second
+========
+Testing in ./GradingRepos/repos/cse247-f18-students-ahvo: heaps as of 2018-10-06 09:00
+========
+Now in: /Users/puneetsachdeva/CSE247/cse247-support/GradingRepos/repos/cse247-f18-students-ahvo
+Your branch is up to date with 'origin/master'.
+HEAD is now at d94dfc3 robograde
+No local changes to save
+
+Already up to date.
+Going back in time to: 2018-10-06 09:00
+At hash b82671bcb5d02cf4c57d1efccb6a0d1193592b48
+
+Buildfile: /Users/puneetsachdeva/CSE247/cse247-support/build.xml
+
+copytest:
+     [echo] would copy from /Users/puneetsachdeva/CSE247/cse247-f18-students key ahvo testfilesource test/TestMinHeap package heaps repo ./GradingRepos/repos/cse247-f18-students-ahvo
+     [copy] Copying 1 file to /Users/puneetsachdeva/CSE247/cse247-support/GradingRepos/repos/cse247-f18-students-ahvo/labs/heaps/test
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Compiling the code
+Buildfile: /Users/puneetsachdeva/CSE247/cse247-support/build.xml
+
+compile:
+     [echo] Compiling heaps/MinHeap
+    [mkdir] Created dir: /Users/puneetsachdeva/CSE247/cse247-support/GradingRepos/repos/cse247-f18-students-ahvo/bin
+    [javac] Compiling 1 source file to /Users/puneetsachdeva/CSE247/cse247-support/GradingRepos/repos/cse247-f18-students-ahvo/bin
+
+BUILD SUCCESSFUL
+Total time: 1 second
+Buildfile: /Users/puneetsachdeva/CSE247/cse247-support/build.xml
+
+compile:
+     [echo] Compiling heaps/test/TestMinHeap
+    [javac] Compiling 1 source file to /Users/puneetsachdeva/CSE247/cse247-support/GradingRepos/repos/cse247-f18-students-ahvo/bin
+
+BUILD SUCCESSFUL
+Total time: 1 second
+Running test test.TestMinHeap
+Buildfile: /Users/puneetsachdeva/CSE247/cse247-support/build.xml
+
+test:
+    [junit] Running heaps.test.TestMinHeap
+    [junit] Testsuite: heaps.test.TestMinHeap
+    [junit] Testing unique size 0
+    [junit] done
+    [junit] Testing unique size 1
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] 	at heaps.validate.MinHeapValidator.checkLocsCorrect(MinHeapValidator.java:135)
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:32)
+    [junit] 	at heaps.test.TestMinHeap.sortTest(TestMinHeap.java:224)
+    [junit] 	at heaps.test.TestMinHeap.testViaSorting(TestMinHeap.java:121)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] done
+    [junit] Testing unique size 2
+    [junit] done
+    [junit] Testing unique size 3
+    [junit] done
+    [junit] Testing unique size 4
+    [junit] ===== Failure report for testViaSorting(heaps.test.TestMinHeap) ========
+    [junit] Failure message: Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]    0   
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit]  1   2 
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 3
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree that triggered this problem:
+    [junit]  1 
+    [junit] 1 2
+    [junit] 
+    [junit] ===== End Failure report for testViaSorting(heaps.test.TestMinHeap) ========
+    [junit] 
+    [junit] 
+    [junit] Displaying a correct heap of 50 unique integers:
+    [junit]                                                                0                                                               
+    [junit]                                1                                                               4                               
+    [junit]                5                               2                               7                               6               
+    [junit]        14              10              8               3               26              16              32              15      
+    [junit]    33      19      13      11      20      12      22      9       36      31      27      39      46      34      37      23  
+    [junit]  44  35  45  38  30  29  21  18  41  28  43  40  49  24  25  17  47  42  48
+    [junit] 
+    [junit] ===== Failure report for testAndPrint(heaps.test.TestMinHeap) ========
+    [junit] Failure message: Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]                                                                0                                                               
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+    [junit]                                1                                                               4                               
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+    [junit]                5                               2                               7                               6               
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit]        14              10              8               3               26              16              32              15      
+    [junit] 	at heaps.validate.MinHeapValidator.checkLocsCorrect(MinHeapValidator.java:135)
+    [junit]    33      19      13      11      20      12      22      9       36      31      27      39      46      34      37      23  
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:32)
+    [junit]  44  35  45  38  30  29  21  18  41  28  43  40  49  24  25  17  47  42  48
+    [junit] 	at heaps.test.TestMinHeap.sortTest(TestMinHeap.java:224)
+    [junit] 
+    [junit] 	at heaps.test.TestMinHeap.testAndPrint(TestMinHeap.java:175)
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] Tree that triggered this problem:
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit]                                                                1                                                               
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit]                                1                                                               4                               
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit]                5                               2                               7                               6               
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit]        14              10              8               3               26              16              32              15      
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit]    33      19      13      11      20      12      22      9       36      31      27      39      46      34      37      23  
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit]  44  35  45  38  30  29  21  18  41  28  43  40  49  24  25  17  47  42
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] ===== End Failure report for testAndPrint(heaps.test.TestMinHeap) ========
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+    [junit] ===== Failure report for testLocUpdatedHeapify(heaps.test.TestMinHeap) ========
+    [junit] Failure message: Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit] 	at heaps.validate.MinHeapValidator.checkLocsCorrect(MinHeapValidator.java:135)
+    [junit]        1       
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:32)
+    [junit]    2       3   
+    [junit] 	at heaps.test.TestMinHeap.testLocUpdatedHeapify(TestMinHeap.java:166)
+    [junit]  4   5   6  131
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] Tree that triggered this problem:
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit]    2   
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit]  2   3 
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 4 5 6
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] ===== End Failure report for testLocUpdatedHeapify(heaps.test.TestMinHeap) ========
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+    [junit] Tests run: 8, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.385 sec
+    [junit] Output:
+    [junit] Testing unique size 0
+    [junit] done
+    [junit] Testing unique size 1
+    [junit] done
+    [junit] Testing unique size 2
+    [junit] done
+    [junit] Testing unique size 3
+    [junit] done
+    [junit] Testing unique size 4
+    [junit] ===== Failure report for testViaSorting(heaps.test.TestMinHeap) ========
+    [junit] Failure message: Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]    0   
+    [junit]  1   2 
+    [junit] 3
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree that triggered this problem:
+    [junit]  1 
+    [junit] 1 2
+    [junit] 
+    [junit] ===== End Failure report for testViaSorting(heaps.test.TestMinHeap) ========
+    [junit] 
+    [junit] 
+    [junit] Displaying a correct heap of 50 unique integers:
+    [junit]                                                                0                                                               
+    [junit]                                1                                                               4                               
+    [junit]                5                               2                               7                               6               
+    [junit]        14              10              8               3               26              16              32              15      
+    [junit]    33      19      13      11      20      12      22      9       36      31      27      39      46      34      37      23  
+    [junit]  44  35  45  38  30  29  21  18  41  28  43  40  49  24  25  17  47  42  48
+    [junit] 
+    [junit] ===== Failure report for testAndPrint(heaps.test.TestMinHeap) ========
+    [junit] Failure message: Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]                                                                0                                                               
+    [junit]                                1                                                               4                               
+    [junit]                5                               2                               7                               6               
+    [junit]        14              10              8               3               26              16              32              15      
+    [junit]    33      19      13      11      20      12      22      9       36      31      27      39      46      34      37      23  
+    [junit]  44  35  45  38  30  29  21  18  41  28  43  40  49  24  25  17  47  42  48
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree that triggered this problem:
+    [junit]                                                                1                                                               
+    [junit]                                1                                                               4                               
+    [junit]                5                               2                               7                               6               
+    [junit]        14              10              8               3               26              16              32              15      
+    [junit]    33      19      13      11      20      12      22      9       36      31      27      39      46      34      37      23  
+    [junit]  44  35  45  38  30  29  21  18  41  28  43  40  49  24  25  17  47  42
+    [junit] 
+    [junit] ===== End Failure report for testAndPrint(heaps.test.TestMinHeap) ========
+    [junit] 
+    [junit] 
+    [junit] ===== Failure report for testLocUpdatedHeapify(heaps.test.TestMinHeap) ========
+    [junit] Failure message: Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]        1       
+    [junit]    2       3   
+    [junit]  4   5   6  131
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree that triggered this problem:
+    [junit]    2   
+    [junit]  2   3 
+    [junit] 4 5 6
+    [junit] 
+    [junit] ===== End Failure report for testLocUpdatedHeapify(heaps.test.TestMinHeap) ========
+    [junit] 
+    [junit] 
+    [junit] 
+    [junit] Error: 
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] 	at heaps.validate.MinHeapValidator.checkLocsCorrect(MinHeapValidator.java:135)
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:32)
+    [junit] 	at heaps.test.TestMinHeap.sortTest(TestMinHeap.java:224)
+    [junit] 	at heaps.test.TestMinHeap.testViaSorting(TestMinHeap.java:121)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] 	at heaps.validate.MinHeapValidator.checkLocsCorrect(MinHeapValidator.java:135)
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:32)
+    [junit] 	at heaps.test.TestMinHeap.sortTest(TestMinHeap.java:224)
+    [junit] 	at heaps.test.TestMinHeap.testAndPrint(TestMinHeap.java:175)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] 	at heaps.validate.MinHeapValidator.checkLocsCorrect(MinHeapValidator.java:135)
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:32)
+    [junit] 	at heaps.test.TestMinHeap.testLocUpdatedHeapify(TestMinHeap.java:166)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+    [junit] 
+    [junit] Tests run: 8, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.385 sec
+    [junit] ------------- Standard Output ---------------
+    [junit] Testing unique size 0
+    [junit] done
+    [junit] Testing unique size 1
+    [junit] done
+    [junit] Testing unique size 2
+    [junit] done
+    [junit] Testing unique size 3
+    [junit] done
+    [junit] Testing unique size 4
+    [junit] ===== Failure report for testViaSorting(heaps.test.TestMinHeap) ========
+    [junit] Failure message: Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]    0   
+    [junit]  1   2 
+    [junit] 3
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree that triggered this problem:
+    [junit]  1 
+    [junit] 1 2
+    [junit] 
+    [junit] ===== End Failure report for testViaSorting(heaps.test.TestMinHeap) ========
+    [junit] 
+    [junit] 
+    [junit] Displaying a correct heap of 50 unique integers:
+    [junit]                                                                0                                                               
+    [junit]                                1                                                               4                               
+    [junit]                5                               2                               7                               6               
+    [junit]        14              10              8               3               26              16              32              15      
+    [junit]    33      19      13      11      20      12      22      9       36      31      27      39      46      34      37      23  
+    [junit]  44  35  45  38  30  29  21  18  41  28  43  40  49  24  25  17  47  42  48
+    [junit] 
+    [junit] ===== Failure report for testAndPrint(heaps.test.TestMinHeap) ========
+    [junit] Failure message: Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]                                                                0                                                               
+    [junit]                                1                                                               4                               
+    [junit]                5                               2                               7                               6               
+    [junit]        14              10              8               3               26              16              32              15      
+    [junit]    33      19      13      11      20      12      22      9       36      31      27      39      46      34      37      23  
+    [junit]  44  35  45  38  30  29  21  18  41  28  43  40  49  24  25  17  47  42  48
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree that triggered this problem:
+    [junit]                                                                1                                                               
+    [junit]                                1                                                               4                               
+    [junit]                5                               2                               7                               6               
+    [junit]        14              10              8               3               26              16              32              15      
+    [junit]    33      19      13      11      20      12      22      9       36      31      27      39      46      34      37      23  
+    [junit]  44  35  45  38  30  29  21  18  41  28  43  40  49  24  25  17  47  42
+    [junit] 
+    [junit] ===== End Failure report for testAndPrint(heaps.test.TestMinHeap) ========
+    [junit] 
+    [junit] 
+    [junit] ===== Failure report for testLocUpdatedHeapify(heaps.test.TestMinHeap) ========
+    [junit] Failure message: Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]        1       
+    [junit]    2       3   
+    [junit]  4   5   6  131
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree that triggered this problem:
+    [junit]    2   
+    [junit]  2   3 
+    [junit] 4 5 6
+    [junit] 
+    [junit] ===== End Failure report for testLocUpdatedHeapify(heaps.test.TestMinHeap) ========
+    [junit] 
+    [junit] 
+    [junit] ------------- ---------------- ---------------
+    [junit] ------------- Standard Error -----------------
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] 	at heaps.validate.MinHeapValidator.checkLocsCorrect(MinHeapValidator.java:135)
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:32)
+    [junit] 	at heaps.test.TestMinHeap.sortTest(TestMinHeap.java:224)
+    [junit] 	at heaps.test.TestMinHeap.testViaSorting(TestMinHeap.java:121)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] 	at heaps.validate.MinHeapValidator.checkLocsCorrect(MinHeapValidator.java:135)
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:32)
+    [junit] 	at heaps.test.TestMinHeap.sortTest(TestMinHeap.java:224)
+    [junit] 	at heaps.test.TestMinHeap.testAndPrint(TestMinHeap.java:175)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] 	at heaps.validate.MinHeapValidator.checkLocsCorrect(MinHeapValidator.java:135)
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:32)
+    [junit] 	at heaps.test.TestMinHeap.testLocUpdatedHeapify(TestMinHeap.java:166)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+    [junit] ------------- ---------------- ---------------
+    [junit] 
+    [junit] Testcase: testViaSorting took 0.084 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]    0   
+    [junit]  1   2 
+    [junit] 3
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree that triggered this problem:
+    [junit]  1 
+    [junit] 1 2
+    [junit] 
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:43)
+    [junit] 	at heaps.test.TestMinHeap.sortTest(TestMinHeap.java:224)
+    [junit] 	at heaps.test.TestMinHeap.testViaSorting(TestMinHeap.java:121)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+    [junit] Testcase: testEmptyHeap took 0.008 sec
+    [junit] Testcase: testAndPrint took 0.027 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]                                                                0                                                               
+    [junit]                                1                                                               4                               
+    [junit]                5                               2                               7                               6               
+    [junit]        14              10              8               3               26              16              32              15      
+    [junit]    33      19      13      11      20      12      22      9       36      31      27      39      46      34      37      23  
+    [junit]  44  35  45  38  30  29  21  18  41  28  43  40  49  24  25  17  47  42  48
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree that triggered this problem:
+    [junit]                                                                1                                                               
+    [junit]                                1                                                               4                               
+    [junit]                5                               2                               7                               6               
+    [junit]        14              10              8               3               26              16              32              15      
+    [junit]    33      19      13      11      20      12      22      9       36      31      27      39      46      34      37      23  
+    [junit]  44  35  45  38  30  29  21  18  41  28  43  40  49  24  25  17  47  42
+    [junit] 
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:43)
+    [junit] 	at heaps.test.TestMinHeap.sortTest(TestMinHeap.java:224)
+    [junit] 	at heaps.test.TestMinHeap.testAndPrint(TestMinHeap.java:175)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+    [junit] Testcase: testExtractMin took 0.035 sec
+    [junit] Testcase: testLocUpdatedHeapify took 0.005 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] Heap Validation Error (detail shown below):
+    [junit] java.lang.Error: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree before the problem occurred:
+    [junit]        1       
+    [junit]    2       3   
+    [junit]  4   5   6  131
+    [junit] 
+    [junit] What went wrong: In your array at index 1 the Decreaser object has the wrong location. It should be 1 but was 2
+    [junit] Tree that triggered this problem:
+    [junit]    2   
+    [junit]  2   3 
+    [junit] 4 5 6
+    [junit] 
+    [junit] 	at heaps.validate.MinHeapValidator.check(MinHeapValidator.java:43)
+    [junit] 	at heaps.test.TestMinHeap.testLocUpdatedHeapify(TestMinHeap.java:166)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+    [junit] Testcase: testInsert took 0.001 sec
+    [junit] Testcase: testUsingHeapSort took 0.199 sec
+    [junit] Testcase: testLocUpdatedDecrease took 0 sec
+
+BUILD FAILED
+/Users/puneetsachdeva/CSE247/cse247-support/build.xml:34: Test heaps.test.TestMinHeap failed
+
+Total time: 1 second
+================
+Lab is not counted -- failed unit tests
+================
+
+CSE247 Robot tester ends testing heaps on 2018-12-17 14:36:51 -0500
+-------------------

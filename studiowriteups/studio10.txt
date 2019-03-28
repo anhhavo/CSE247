@@ -1,0 +1,59 @@
+Your TA's name:
+
+Students in your studio group:
+
+    Name        WUSTLKey (e.g. "jbuhler")
+	
+1.Anh vo		ahvo
+2.Grant Marcketta gmarcketta
+3.
+4.
+5.
+6.
+
+Below each question, type in your short, to-the-point answers.
+
+Question A1:
+It is in our notebook.
+Question A2:
+15 and 9
+Question A3:
+Shift to 1 delete 17, Shift to 1, shift to 9.
+Question B1:
+either increasing or decreasing.
+Question B2:
+No nodes, 1 nodes, 3 nodes 1-2-3.
+Question B3:
+They are equal or differ :1. Log nr or nl are their heights. 
+Question B4:
+The height will be max( lognr, log nl). This means height of T is logn.
+Question B5:
+No and No. Satisfy P is a balance tree, but a balance tree not necessarily is a balanced tree.
+Question B6:
+n/2
+Question B7:
+Insert(n){
+	add n/2;
+	insert(3n/4);
+	insert(n/4);
+}.
+Question B8:
+n worst case nlogn.
+Question C1:
+Compute(i)
+if 2^i != null 
+Question C2:
+
+Question C3:
+
+Question C4:
+
+Question C5:
+
+Question C6:
+
+Question C7:
+
+Question D1:
+
+Question D2:
